@@ -11,9 +11,9 @@ A simplified wrapper around Clarifai's NSFW detection.
 # Example
 
 ```js
-var FILTER = require('virus-nsfw');
+var virusNsfw = require('virus-nsfw');
 
-var filter = new FILTER("YOUR_CLARIFAI_API_KEY_HERE");
+var filter = new virusNsfw.Filter("YOUR_CLARIFAI_API_KEY_HERE");
 
 function handleResult(result) {
     if (result.sfw) {
@@ -53,21 +53,33 @@ For security reasons, you shouldn't hardcode your API key into your code, becaus
 
 Go ahead and save your API key in an environment variable. Now, when you push the code to GitHub, or upload is somewhere, people can't see it.
 
-After you've securely saved your API key into an environment variable, we can create the virus-nsfw instance. Use `new FILTER(process.env.YOUR_ENVIRONMENT_VARIABLE_NAME_HERE)` for that.
+After you've securely saved your API key into an environment variable, we can create the virus-nsfw instance. Use `new Filter(process.env.YOUR_ENVIRONMENT_VARIABLE_NAME_HERE)` for that.
 
 ```js
-var FILTER = require('virus-nsfw');
+var { Filter } = require('virus-nsfw');
 
 var filter = new FILTER(process.env.MYAPP_CLARIFAI_KEY);
+
+```
+```kt
+Or you can do else 
+```
+```js
+var Nsfw = require("virus-nsfw")
+var filter = new Nsfw.Filter(process.env.MYAPP_CLARIFAI_KEY)
+
 ```
 
 Congratulations! Now you can predict the NSFWness of images. Let's see an example of how to do that!
 
 ```js
-var FILTER = require('virus-nsfw');
-
-var filter = new FILTER(process.env.MYAPP_CLARIFAI_KEY);
-
+var { Filter } = require('virus-nsfw'); 
+var filter = new Filter(process.env.MYAPP_CLARIFAI_KEY);
+/**
+you can do else 
+var Nsfw = require("virus-nsfw")
+var filter = new Nsfw.Filter("your key")
+*/
 filter.get("https://example.com/image.png").then(function(result) {
     if (result.sfw) { // If the result is safe for work:
         console.log(`This image is safe for work, with a confidence of ${result.confidence}!`);

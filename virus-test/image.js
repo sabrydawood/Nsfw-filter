@@ -1,8 +1,8 @@
-var FILTER = require("../index");
+var Nsfw = require("../index");
 
-var filter = new FILTER(process.env.Key);
+var filter = new Nsfw.Filter(process.env.Key);
 
-filter.predict("https://media.discordapp.net/attachments/1026208224036261939/1041140542345596988/image0.jpg").then(function(result) {
+filter.get("https://media.discordapp.net/attachments/1026208224036261939/1041140542345596988/image0.jpg").then(function(result) {
     console.log(result);
 }).catch(function(error) {
     var censoredError = error;
