@@ -1,3 +1,4 @@
+ by JavaScript
 # nsfw-filter 
  [![Build Status](https://img.shields.io/badge/Build-NoBuild-blueviolet?logo=github&logoColor=blue&style=social)](https://travis-ci.org/virgel1995/Nsfw-filter)
  [![GitHub package.json version](https://img.shields.io/github/package-json/v/virgel1995/Nsfw-filter?color=aqua&logo=v&logoColor=yellow)](https://gitHub.com/virgel1995/Nsfw-filter)
@@ -95,3 +96,113 @@ filter.get("https://example.com/image.png").then(function(result) {
     console.error(error); // Print the error to the console.
 });
 ```
+# Works with discord
+
+## messages Content
+to catch every attachment send or url send 
+you need messageCreate message to catch content `interaction` is api endpoint so thats didn't have content just `request, response`
+oky let we give you example to do that 
+```js
+require("dotenv").config();
+var { Filter } = require('virus-nsfw'); 
+var filter = new Filter(process.env.MYAPP_CLARIFAI_KEY);
+//get Client, GatewayIntentBits from discord package 
+const { Client, GatewayIntentBits } = require('discord.js');
+// create client 
+//make sure this intents required to get message content
+const client = new Client({ intents: [
+GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent] });
+// ready event (not required )
+client.on("ready", () => {
+	console.log(client.user.tag + "is ready")
+})
+// create messageCreate event (required) to get content
+client.on("messageCreate", async (message)=>{
+// mage regx to test if content has url
+			let regx = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/
+// define content as vaiable
+let con = message.content.toLowerCase().replace(/\s+/g, '')
+//test function to check content if have url or not
+let cdu = regx.test(con)
+	//if message has upload attachment
+if (message.attachments.size > 0) {
+	// get upload attchments if more than or 1
+  const [attachments] = message.attachments.values();
+	//get attachment url 
+const url = attachments ? attachments.url : null;
+	// testImage function to check if attachment is nsfw or not
+	let test= await testImage(url)
+	//if attachment is not nsfw
+	if(test.sfw){
+		message.channel.send("congratulations your imgae is safe")
+	}else {
+		//if attachment is nfsw
+message.channel.send("sorry your image is not safe")
+	}
+	console.log(test)
+}
+//if message has link 
+else if (cdu){
+	// testImage function to check if content url is nsfw or not
+let test = await testImage(con)
+if(test.sfw){
+// do what you need this image is safe
+}
+	//do what you need more
+console.log(test)
+		}
+})
+// function to test nsfw or not to use it whare i need 
+const testImage= async(url)=>{
+	let res= filter.get(url).then(function(resulet){
+	//console.log(resulet)
+	return resulet;
+})
+	return res;
+}
+//login your bot 
+client.login("your token")
+```
+## interaction use 
+
+when you need to use it with interactions 
+its very easy to make 
+you just need to get that target 
+`interaction.options.getString("target")`
+this gives you the user input or upload from interction options
+
+Example use 
+```js
+require("dotenv").config();
+var { Filter } = require('virus-nsfw'); 
+var filter = new Filter(process.env.MYAPP_CLARIFAI_KEY);
+interction.run(interaction){
+	// get input value from options
+let url = interaction.options.getString("url") ;
+// filter image url or attachment uploaded from interactions option
+
+filter.get(url).then(function(resulet){
+	//if url or attachment is not nsfw
+if(resulet.sfw){
+	// do what you need 😜
+} 
+	//if url or attachment is nsfw
+else {
+	//do what you need 😜
+}
+});
+};
+```
+
+if you need more help join our [discord server](https://discord.gg/eenQW67QWp)
+
+# My outhor packages
+
+° [Discord-Virus package](https://www.npmjs.com/package/discord-virus)
+° [Bot-Genrator package](https://www.npmjs.com/package/bot-genrator)
+
+
+
+made with 💗 by JavaScript
