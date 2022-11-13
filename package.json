@@ -1,6 +1,6 @@
 {
   "name": "virus-nsfw",
-  "version": "0.0.2-beta",
+  "version": "0.0.3-beta",
   "description": "A simplified wrapper around Clarifai's NSFW detection.",
   "main": "index.js",
   "scripts": {
