@@ -35,7 +35,7 @@ class FILTER {
      * @param {PredictOptions} options Prediction options.
      * @returns {PredictPromise}
      */
-    predict(data, options) {
+    get(data, options) {
         var app = this.app;
         return new Promise(function(resolve, reject) {
             try {

@@ -27,11 +27,11 @@ function handleError(error) {
     console.error(error);
 }
 
-filter.predict("https://example.com/example.png").then(handleResult).catch(handleError); // URL
+filter.get("https://example.com/example.png").then(handleResult).catch(handleError); // URL
 // or // 
-filter.predict("data:image/png;base64,dGhpc2lzbm90YW5pbWFnZQ==").then(handleResult).catch(handleError); // Data URL
+filter.get("data:image/png;base64,dGhpc2lzbm90YW5pbWFnZQ==").then(handleResult).catch(handleError); // Data URL
 // or // 
-filter.predict("dGhpc2lzbm90YW5pbWFnZQ==", handleResult).then(handleResult).catch(handleError); // Base64
+filter.get("dGhpc2lzbm90YW5pbWFnZQ==", handleResult).then(handleResult).catch(handleError); // Base64
 ```
 
 
@@ -68,7 +68,7 @@ var FILTER = require('virus-nsfw');
 
 var filter = new FILTER(process.env.MYAPP_CLARIFAI_KEY);
 
-filter.predict("https://example.com/image.png").then(function(result) {
+filter.get("https://example.com/image.png").then(function(result) {
     if (result.sfw) { // If the result is safe for work:
         console.log(`This image is safe for work, with a confidence of ${result.confidence}!`);
     } else { // If the result is not safe for work:
