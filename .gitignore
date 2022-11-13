@@ -1,3 +1,4 @@
 node_modules
 .upm
 .env
+yarn-error.log

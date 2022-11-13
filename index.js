@@ -20,7 +20,7 @@ var dataParser = require("./lib/dataparser");
 
 class FILTER {
     /**
-     * Creates an nsfai instance.
+     * Creates an FILTER instance.
      * @param {string} apiKey Your Clarifai API key.
      */
     constructor(apiKey) {
@@ -52,14 +52,14 @@ class FILTER {
                         if (isVideo) {
                             var resultArray = response.outputs[0].data.frames.map(function(x) {
                                 return {
-                                    sfw: x.data.concepts[0].name === "sfw",
+  success: "Successfully Tested your Video",                         sfw: x.data.concepts[0].name === "sfw",
                                     confidence: x.data.concepts[0].value
                                 };
                             });
                             resolve(resultArray);
                         } else {
                             resolve({
-                                sfw: response.outputs[0].data.concepts[0].name === "sfw",
+  success: "Successfully Tested your image",                            sfw: response.outputs[0].data.concepts[0].name === "sfw",
                                 confidence: response.outputs[0].data.concepts[0].value // confidence (0-1) about the result
                             });
                         }

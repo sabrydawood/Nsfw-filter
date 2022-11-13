@@ -37,7 +37,7 @@ filter.predict("dGhpc2lzbm90YW5pbWFnZQ==", handleResult).then(handleResult).catc
 
 ## Setting up your project
 
-First, you'll need to install NSFAI via NPM. Use the `--save-dev` flag, so it gets saved into your `package.json` file.
+First, you'll need to install virus-nsfw via NPM. Use the `--save-dev` flag, so it gets saved into your `package.json` file.
 
 ```
 npm install --save-dev virus-nsfw
