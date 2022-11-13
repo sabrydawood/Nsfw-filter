@@ -52,14 +52,17 @@ class FILTER {
                         if (isVideo) {
                             var resultArray = response.outputs[0].data.frames.map(function(x) {
                                 return {
-  success: "Successfully Tested your Video",                         sfw: x.data.concepts[0].name === "sfw",
+  success: "Successfully Tested your Video",         			status: response.outputs[0].status,
+																	sfw: x.data.concepts[0].name === "sfw",
                                     confidence: x.data.concepts[0].value
                                 };
                             });
                             resolve(resultArray);
                         } else {
                             resolve({
-  success: "Successfully Tested your image",                            sfw: response.outputs[0].data.concepts[0].name === "sfw",
+  success: "Successfully Tested your image",      
+																		status: response.outputs[0].status,
+															sfw: response.outputs[0].data.concepts[0].name === "sfw",
                                 confidence: response.outputs[0].data.concepts[0].value // confidence (0-1) about the result
                             });
                         }

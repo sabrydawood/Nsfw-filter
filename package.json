@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "tTest": "npm test && node ./virus-test/image.js && node ./virus-test/video.js",
-		"pub":"yarn login && yarn publish"
+    "pub": "yarn login && yarn publish"
   },
   "repository": {
     "type": "git",
@@ -16,12 +16,11 @@
     "ai",
     "nsfw",
     "filter",
-		"discord",
-		"discord.js",
-		"discord-virus",
-"nsfw.js",
-		"nsfwjs"
-
+    "discord",
+    "discord.js",
+    "discord-virus",
+    "nsfw.js",
+    "nsfwjs"
   ],
   "author": "virus24",
   "license": "MIT",
@@ -29,11 +28,11 @@
     "url": "https://github.com/virgel1995/Nsfw-filter/issues"
   },
   "homepage": "https://github.com/virgel1995/Nsfw-filter#readme",
-  "dependencies": {
-    "clarifai": "^2.7.0"
-  },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^10.1.0"
+  },
+  "dependencies": {
+    "clarifai": "^2.9.1"
   }
 }
