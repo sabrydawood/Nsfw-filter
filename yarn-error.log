@@ -1,0 +1,74 @@
+Arguments: 
+  /nix/store/amm5j0ag985nh49n096a78q1dfs2xsfn-nodejs-16.15.0/bin/node /nix/store/lccjrdddvk1bvd8zl29bd09df2z7d5p3-yarn-1.22.18/bin/yarn publish
+
+PATH: 
+  /home/runner/Nsfw-filter/node_modules/.bin:/home/runner/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/nix/store/amm5j0ag985nh49n096a78q1dfs2xsfn-nodejs-16.15.0/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/runner/Nsfw-filter/.config/npm/node_global/bin:/home/runner/Nsfw-filter/node_modules/.bin:/nix/store/v48s6iddb518j9lc1pk3rcn3x8c2ff0j-bash-interactive-5.1-p16/bin:/nix/store/knssayvl4p7gfapib4wcfhzy14169kva-patchelf-0.14.5/bin:/nix/store/ag2bpk0lzjvj409znklrz5krkpc5imzs-gcc-wrapper-11.3.0/bin:/nix/store/as1xzrm2921pnxx4jvxj39jn4v88wdy1-gcc-11.3.0/bin:/nix/store/h0cnbmfcn93xm5dg2x27ixhag1cwndga-glibc-2.34-210-bin/bin:/nix/store/7jr7pr4c6yb85xpzay5xafs5zlcadkhz-coreutils-9.0/bin:/nix/store/wp7kc5y840ldi5sd8j81fj4dabccff2d-binutils-wrapper-2.38/bin:/nix/store/rq6bh3qfrqnyqwik0w3q6w180zg3w2pa-binutils-2.38/bin:/nix/store/amm5j0ag985nh49n096a78q1dfs2xsfn-nodejs-16.15.0/bin:/nix/store/0d0fnk7ya8pfcsvbilwf017qpypylicx-typescript-language-server-0.9.6/bin:/nix/store/lccjrdddvk1bvd8zl29bd09df2z7d5p3-yarn-1.22.18/bin:/nix/store/j6p7ac79q2r8pmgv5j8yzp29rmbqm31n-jest-cli-23.6.0/bin:/nix/store/140f6s4nwiawrr3xyxarmcv2mk62m62y-findutils-4.9.0/bin:/nix/store/35swvg68q1j3m9fbhcdnqwk9mlm8plvn-diffutils-3.8/bin:/nix/store/lgvd2fh4cndlv8mnyy49jp1nplpml3xp-gnused-4.8/bin:/nix/store/qd9jxc0q00cr7fp30y6jbbww20gj33lg-gnugrep-3.7/bin:/nix/store/w3p77mkdy3pigg12iyha8y9dqakhjsxn-gawk-5.1.1/bin:/nix/store/jm7czg4lgfhiphkyjwn1k1i8liqqizgi-gnutar-1.34/bin:/nix/store/vqpkbr3isafl4867app44w636zrkr9wp-gzip-1.12/bin:/nix/store/fkwcqfw3gcspmpmxqxqnxjja74sg207g-bzip2-1.0.6.0.2-bin/bin:/nix/store/4gkcrzpn31sb12fnzclyfzhpd8xh8l6x-gnumake-4.3/bin:/nix/store/iffl6dlplhv22i2xy7n1w51a5r631kmi-bash-5.1-p16/bin:/nix/store/c0hmdlwdd85gzmilafg4gzzdb2vpg176-patch-2.7.6/bin:/nix/store/kyg5qxx0nl5hfjx0kgw120b85i4l6i8y-xz-5.2.5-bin/bin:/nix/store/sgqd0ajghcv2axfl1lad0b1alyavp0dc-prybar-elisp-0.0.0-67f7a00/bin:/nix/store/p3hsvljpgs68jqwar41lc0jqhjj734lf-prybar-lua-0.0.0-67f7a00/bin:/nix/store/qzxs2gybds3s9kb1vkaflpgm2nwr85fh-prybar-python3-0.0.0-67f7a00/bin:/nix/store/km94z9mxp8w4m8gxxp5mbfpdf3nkfvd8-prybar-sqlite-0.0.0-67f7a00/bin:/nix/store/2pnc7b76asw0z59c4l6h6qy8arwqrii1-prybar-tcl-0.0.0-67f7a00/bin:/nix/store/hpbvrlwd5viqmvcaisb3x0118i913a9n-stderred-0.1.0/bin:/nix/store/g0nbhxqkc1whlkijq74ix65llwr453hj-upm-0.0.0-872ae29/bin:/nix/store/1ivww36ip95b4b30i9mmk6icrrs2z3j5-pid1/bin:/nix/store/22jj08nss8zvbgk52ikj09ssg6rw84rv-silver-searcher-2.2.0/bin:/nix/store/d3whkb9c3znnicbj5m6g5qwa7ia60z8i-bash/bin:/nix/store/176gh50y24c0lx2bnnmsvf9wazb73php-coreutils-9.0/bin:/nix/store/zaamc32wijqka1mg8w2gr1f6bgvs7yyz-vscode-cpptools-dap-1.3.1/bin:/nix/store/ann2w0blx5vrc8mw1hwnvb37gry6ci9a-replit-python-dap-wrapper-1.0.0/bin:/nix/store/gvzyha79wkr1xazax4fd9nnbj8yp9rv6-node-dap/bin:/nix/store/lyzn4qly8k878lgfy1b399w58q4khys2-fluxbox/bin:/nix/store/29fdcv1yhlll61ml8a31qdkrbprxd7gs-prybar-nodejs-0.0.0-67f7a00/bin:/nix/store/mav4251if1ahjq5vkpwycyyvnmy459c4-pulseaudio-14.2/bin:/nix/store/2py1rvdx7y7fbi0yffw7dq2bacd15605-rfbproxy-0.0.0-b81eb2f/bin:/nix/store/xwl0wqr3g68mx2b60qja3kn865gf45x5-toml-editor-0.0.0-5aba775/bin:/nix/store/bfmyvk668bl0n294qancg8sg5x42p9vx-nix-editor-0.0.0-8e65b7f/bin:/nix/store/0b2bvviijkvq2nvm04dbq3lwlq7h742m-tigervnc-1.12.0/bin:/nix/store/7v07bmyfjq0jdnx6xwxlib05na8kksdf-xwininfo-1.1.4/bin:/nix/store/gfvyxpnr8ji58pdhy7ns4zqy57z34aqm-replbox/bin:/nix/store/4522jkjzj2nlx2z67325aylg6ngvvg2h-curl-7.80.0-bin/bin:/nix/store/sdpqvnmahizaxbs3nnzmgfgyqsdxb1bw-gnutar-1.34/bin:/nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/bin:/nix/store/pb6sp9j9bv7s3bk1biqq05w73f40gpg8-ripgrep-13.0.0/bin:/home/runner/.nix-profile/bin:/home/runner/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.15.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/-/user/org.couchdb.user:virus24: failed to authenticate: Could not authenticate virus24: bad password
+      at Request.params.callback [as _callback] (/nix/store/lccjrdddvk1bvd8zl29bd09df2z7d5p3-yarn-1.22.18/libexec/yarn/lib/cli.js:66138:18)
+      at Request.self.callback (/nix/store/lccjrdddvk1bvd8zl29bd09df2z7d5p3-yarn-1.22.18/libexec/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (/nix/store/lccjrdddvk1bvd8zl29bd09df2z7d5p3-yarn-1.22.18/libexec/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (/nix/store/lccjrdddvk1bvd8zl29bd09df2z7d5p3-yarn-1.22.18/libexec/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "virus-nsfw",
+    "version": "0.0.2-beta",
+    "description": "A simplified wrapper around Clarifai's NSFW detection.",
+    "main": "index.js",
+    "scripts": {
+      "test": "mocha",
+      "tTest": "npm test && node ./virus-test/image.js && node ./virus-test/video.js",
+  		"publish":"yarn login && yarn publish"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/virgel1995/nsfw.js.git"
+    },
+    "keywords": [
+      "ai",
+      "nsfw",
+      "filter",
+  		"discord",
+  		"discord.js",
+  		"discord-virus",
+  "nsfw.js",
+  		"nsfwjs"
+  
+    ],
+    "author": "virus24",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/virgel1995/nsfw.js/issues"
+    },
+    "homepage": "https://github.com/virgel1995/nsfw.js#readme",
+    "dependencies": {
+      "clarifai": "^2.7.0"
+    },
+    "devDependencies": {
+      "chai": "^4.1.2",
+      "mocha": "^10.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
