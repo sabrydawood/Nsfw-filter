@@ -1,0 +1,32 @@
+{
+  "name": "virus-nsfw",
+  "version": "0.0.1-beta",
+  "description": "A simplified wrapper around Clarifai's NSFW detection.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "tTest": "npm test && node ./virus-test/image.js && node ./virus-test/video.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virgel1995/nsfw.js.git"
+  },
+  "keywords": [
+    "ai",
+    "nsfw",
+    "filter"
+  ],
+  "author": "virus24",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/virgel1995/nsfw.js/issues"
+  },
+  "homepage": "https://github.com/virgel1995/nsfw.js#readme",
+  "dependencies": {
+    "clarifai": "^2.7.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^10.1.0"
+  }
+}
